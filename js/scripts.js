@@ -541,7 +541,7 @@ function generatetable(){
 '</thead>'+
 '<tbody>'+
  ' <tr>'+
-  '  <td class="tg-fq8o" style="vertical-align : middle;text-align:center;" rowspan="6">Référentiel HES-SO</td>'+
+  '  <td class="tg-fq8o" align="center" rowspan="6">Référentiel HES-SO</td>'+
    ' <td class="tg-7zrl">VI - Collaboration</td>'+
     '<td class="tg-7zrl">II - Pensée critique</td>'+
     '<td class="tg-7zrl">VII - Création de contenu numérique</td>'+
@@ -584,7 +584,7 @@ function generatetable(){
     '<td class="tg-7zrl"> </td>'+
   '</tr>'+
   '<tr>'+
-   ' <td class="tg-fq8o" style="vertical-align : middle;text-align:center;" rowspan="7">Référentiel Unifr</td>'+
+   ' <td class="tg-fq8o" align="center" rowspan="7">Référentiel Unifr</td>'+
     '<td class="tg-7zrl">1.1- Communication organisationnelle et institutionnelle</td>'+
     '<td class="tg-7zrl"> 1.3 - Développement professionnel continu</td>'+
     '<td class="tg-7zrl">2.2 - Adaptation et création de ressources numériques</td>'+
