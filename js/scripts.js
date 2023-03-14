@@ -532,50 +532,106 @@ function generatetable(){
 '<thead>'+
   '<tr>'+
     '<th class="tg-bemg">Thématiques</th>'+
-    '<th class="tg-bemg">Collaboration   pour l\'enseignement/l\'apprentissage</th>'+
-    '<th class="tg-bemg">Ethique   numérique (attitudes)</th>'+
-    '<th class="tg-bemg">Création de   contenu numérique</th>'+
-    '<th class="tg-bemg">Résolution de   problèmes</th>'+
-    '<th class="tg-bemg">Feedback,   évaluation et progression</th>'+
+    '<th class="tg-bemg">Collaboration pour l\'enseignement/l\'apprentissage</th>'+
+    '<th class="tg-bemg">Ethique numérique (attitudes)</th>'+
+    '<th class="tg-bemg">Création de contenu numérique</th>'+
+    '<th class="tg-bemg">Résolution de problèmes</th>'+
+    '<th class="tg-bemg">Feedback, évaluation et progression</th>'+
   '</tr>'+
 '</thead>'+
 '<tbody>'+
  ' <tr>'+
-  '  <td class="tg-fq8o" rowspan="2">Référentiel HES-SO</td>'+
-   ' <td class="tg-7zrl">VI.1&nbsp;&nbsp;&nbsp;- Interagir et colloborer au moyen des technologies numériques</td>'+
-    '<td class="tg-7zrl">XI.1&nbsp;&nbsp;&nbsp;- Concience éthique et culturelle</td>'+
-    '<td class="tg-7zrl">VII-&nbsp;&nbsp;&nbsp;Création de contenu numérique</td>'+
-    '<td class="tg-7zrl">IX&nbsp;&nbsp;&nbsp;- Résolution de problème</td>'+
-    '<td class="tg-7zrl">VII&nbsp;&nbsp;&nbsp;- Création de contenu</td>'+
+  '  <td class="tg-fq8o" rowspan="6">Référentiel HES-SO</td>'+
+   ' <td class="tg-7zrl">VI - Collaboration</td>'+
+    '<td class="tg-7zrl">II - Pensée critique</td>'+
+    '<td class="tg-7zrl">VII - Création de contenu numérique</td>'+
+    '<td class="tg-7zrl">IX - Résolution de problème</td>'+
+    '<td class="tg-7zrl">VII- Création de contenu</td>'+
   '</tr>'+
   '<tr>'+
+    '<td class="tg-7zrl"> III.2 - Exploiter le potentieldu numérique pour l\'apprentissage et l\enseignement </td>'+
+    '<td class="tg-7zrl">XI.1 - Concience éthique et culturelle</td>'+
+    '<td class="tg-7zrl">X.1 - Développer sa capacité à créer et à innover</td>'+
+    '<td class="tg-7zrl">X - Innovation et créativité</td>'+
+    '<td class="tg-7zrl"> I.2 - Développer une pensée computationnelle</td>'+
+  '</tr>'+
+  '<tr>'+
+    '<td class="tg-7zrl"> X.3 - Développer une flexibilité grâce au numérique </td>'+
+    '<td class="tg-7zrl">XI.3 -  Protéger l\'environnement</td>'+
+    '<td class="tg-7zrl">IV - Littératie de l\'information des données</td>'+
+    '<td class="tg-7zrl">I.2 - Développer une pensée computationnelle</td>'+
+    '<td class="tg-7zrl"> IV - Littératie de l\'information des données</td>'+
+  '</tr>'+
+	    '<tr>'+
+    '<td class="tg-7zrl">  </td>'+
+    '<td class="tg-7zrl">VIII.2 -  Protéger les données personnelles et la vie privée</td>'+
+    '<td class="tg-7zrl"></td>'+
+    '<td class="tg-7zrl"></td>'+
     '<td class="tg-7zrl"> </td>'+
-    '<td class="tg-7zrl">XI.3&nbsp;&nbsp;&nbsp;- Protéger l\'environnement</td>'+
-    '<td class="tg-7zrl">X.1&nbsp;&nbsp;&nbsp;Développer sa capacité à créer et à innover</td>'+
-    '<td class="tg-7zrl">X&nbsp;&nbsp;&nbsp;- Innovation et créativité</td>'+
+  '</tr>'+
+	    '<tr>'+
+    '<td class="tg-7zrl">  </td>'+
+    '<td class="tg-7zrl">VIII.3 -  Veiller à la santé et au bien-être</td>'+
+    '<td class="tg-7zrl"></td>'+
+    '<td class="tg-7zrl"></td>'+
+    '<td class="tg-7zrl"></td>'+
+  '</tr>'+
+	    '<tr>'+
+    '<td class="tg-7zrl"> </td>'+
+    '<td class="tg-7zrl">V - Communication et réputation</td>'+
+    '<td class="tg-7zrl"></td>'+
+    '<td class="tg-7zrl"></td>'+
     '<td class="tg-7zrl"> </td>'+
   '</tr>'+
   '<tr>'+
-   ' <td class="tg-fq8o" rowspan="3">Référentiel Unifr</td>'+
-    '<td class="tg-7zrl">1.1&nbsp;&nbsp;&nbsp;- Communication organisationnelle et institutionnelle</td>'+
-    '<td class="tg-7zrl"> </td>'+
-    '<td class="tg-7zrl">2-&nbsp;&nbsp;&nbsp;Ressources et informations numériques</td>'+
-    '<td class="tg-7zrl">6.5&nbsp;&nbsp;&nbsp;- Pensée computationnelle et résolution de problèmes</td>'+
-    '<td class="tg-7zrl">4-&nbsp;&nbsp;&nbsp;Evaluation des apprentissages</td>'+
+   ' <td class="tg-fq8o" rowspan="7">Référentiel Unifr</td>'+
+    '<td class="tg-7zrl">1.1- Communication organisationnelle et institutionnelle</td>'+
+    '<td class="tg-7zrl"> 1.3 - Développement professionnel continu</td>'+
+    '<td class="tg-7zrl">2.2 - Adaptation et création de ressources numériques</td>'+
+    '<td class="tg-7zrl">6.5- Pensée computationnelle et résolution de problèmes</td>'+
+    '<td class="tg-7zrl">4.1 - Stratégies d\'évaluation</td>'+
   '</tr>'+
   '<tr>'+
     '<td class="tg-7zrl">1.2 - Collaboration professionnelle</td>'+
-    '<td class="tg-7zrl"> </td>'+
-    '<td class="tg-7zrl">5-&nbsp;&nbsp;&nbsp;Stimuler les étudiant.es</td>'+
-    '<td class="tg-7zrl"> </td>'+
-    '<td class="tg-7zrl"> </td>'+
+    '<td class="tg-7zrl">1.4 - Ouverture et pensée critique envers l\'utilisation du numérique</td>'+
+    '<td class="tg-7zrl">2.3 - Gestion, protection et partage des ressources numériques</td>'+
+    '<td class="tg-7zrl"> 3.4 - Résolustion de problème</td>'+
+    '<td class="tg-7zrl"> 4.2 - Analyse de l\'activité d\'apprentissage </td>'+
   '</tr>'+
   '<tr>'+
-    '<td class="tg-7zrl">6.2 - Communication et collaboration avec le&nbsp;&nbsp;&nbsp;numérique pour l\'apprentissage</td>'+
+    '<td class="tg-7zrl">3.1 - Dispositifs et méthodes d\'enseignement </td>'+
+    '<td class="tg-7zrl">6.1 - Education à l\'information et aux médias </td>'+
+    '<td class="tg-7zrl"> 5.3 - Impliquer activement les étudiant.es</td>'+
     '<td class="tg-7zrl"> </td>'+
+    '<td class="tg-7zrl"> 4.3 - Rétroaction sur l\'activité d\'apprentissage </td>'+
+  '</tr>'+
+'<tr>'+
+    '<td class="tg-7zrl">6.2 - Communication et collaboration avec le numérique pour l\'apprentissage</td>'+
+    '<td class="tg-7zrl">6.4 - Usage responsable du numérique </td>'+
+    '<td class="tg-7zrl"></td>'+
     '<td class="tg-7zrl"> </td>'+
+    '<td class="tg-7zrl"> 3.2 - Orientation et accompagnement des étudiant.es</td>'+
+  '</tr>'+
+  '<tr>'+
+    '<td class="tg-7zrl">6.6 - Développement professionnel</td>'+
+    '<td class="tg-7zrl">2.1 - Sélection de ressources et de l\'information du numérique </td>'+
+    '<td class="tg-7zrl"></td>'+
     '<td class="tg-7zrl"> </td>'+
+    '<td class="tg-7zrl"> 3.3 - Apprentissage et autonomie</td>'+
+  '</tr>'+
+	      '<tr>'+
+    '<td class="tg-7zrl"></td>'+
+    '<td class="tg-7zrl">2.3 - Gestion, protection et partage de ressources numériques</td>'+
+    '<td class="tg-7zrl"></td>'+
     '<td class="tg-7zrl"> </td>'+
+    '<td class="tg-7zrl"></td>'+
+  '</tr>'+
+	    	      '<tr>'+
+    '<td class="tg-7zrl"></td>'+
+    '<td class="tg-7zrl">5.1 - Accessibilité et inclusion</td>'+
+    '<td class="tg-7zrl"></td>'+
+    '<td class="tg-7zrl"> </td>'+
+    '<td class="tg-7zrl"></td>'+
   '</tr>'+
 '</tbody>'
 	$('#referentiel-table')[0].innerHTML = html_table;
