@@ -4,6 +4,7 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
 
+
 // Array with all user's current answers
 let answers = [];
 let myChart;
@@ -444,11 +445,12 @@ async function readText(event) {
 
 // Dwn : do pdf from chart 
 function chartPDF() {
-	let pdf = new jsPDF('p', 'pt', 'letter');
+	window.jsPDF = window.jspdf.jsPDF
+	let pdf =  new jsPDF('p', 'pt','a4', true);
 
 	const pdf_height = 841;
 	const pdf_width = 595;
-	console.log(pdf_width)
+	//console.log(pdf_width)
 
     // source can be HTML-formatted string, or a reference
     // to an actual DOM element from which the text will be scraped.
@@ -465,7 +467,7 @@ function chartPDF() {
     // There is no support for any other type of selectors
     // (class, of compound) at this time.
 
-	pdf.addImage(imgData, 'PNG', 50, Math.floor((pdf_height-canvas_optimal_heigth)/2), Math.floor(optimal_canvas_width), Math.floor(canvas_optimal_heigth));
+	pdf.addImage(imgData, 'PNG', 50, Math.floor((pdf_height-canvas_optimal_heigth)/2), Math.floor(optimal_canvas_width), Math.floor(canvas_optimal_heigth), 'FAST');
 	// TODO: for add dimension < 3 in pdf add a page and call the method doc.fromHtml
 	pdf.save(`mon_autoevaluation_${(date.getDate() + "/" + (date.getMonth()+1) +"/" +date.getFullYear())}.pdf`);
 }
@@ -514,7 +516,7 @@ function generateSubSectionDiv() {
 			html_string += '<div id="question_div_' + index + '" style="display: none"><label for="labCustomRange' + index + '" class="form-label">' + (index + 1) + ') ' + item.title + '</label>' +
 				'</div>'
 	})
-	html_string+= "----------------------" + '<br>'+"Retrouver les thématiques correspondantes et l'ensemble des ressources sur " +  '<a href="https://www.w3schools.com/">Moodle</a><br>'; //Mettre l'adresse du moodle
+	html_string+= "----------------------" + '<br>'+"Retrouver les thématiques correspondantes et l'ensemble des ressources sur " +  '<a href="https://cyberlearn.hes-so.ch/course/view.php?id=20692#section-0">Moodle</a><br>'; //Mettre l'adresse du moodle
 	html_string += '</div>'
 	$('#sub-dimensions-div')[0].innerHTML = html_string;
 	generatetable();
