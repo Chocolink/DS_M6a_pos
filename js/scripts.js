@@ -310,6 +310,18 @@ function getQuestions(index) {
 	}
 }
 
+function getTutorial(){
+	let currentUrl = window.location.href
+	let tutorial =window.open(currentUrl, '_blank');
+	tutorial.addEventListener('load', function() {
+		// Modify the content of the new page
+		tutorial.document.getElementById('welcome').innerHTML = "";
+		tutorial.document.getElementById('chooseQuestions').innerHTML="";
+		let tuto = tutorial.document.getElementById('tutorial');
+		tuto.style.display="block";
+	});
+}
+
 
 // JS for chart 
 

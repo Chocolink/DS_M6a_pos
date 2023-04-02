@@ -31,7 +31,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<!-- TODO: decide if we want this button -->
-						<li class="nav-item"><a class="nav-link active" aria-current="page" href=""></a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" onclick="getTutorial()">help</a></li>
 					</ul>
 				</div>
 			</div>
@@ -64,6 +64,25 @@
 							<li><a class="dropdown-item" onclick="getQuestions(2)">Référentiel Uni-fr</a></li>
 						</ul>
 					</div>
+					<!-- Tutorial page -->
+					<div class="container" id="tutorial" style="display: none">
+						<h1 style="font-weight: bold;text-align: center" class="display-6">Tutorial d'utilisation</h1>
+						<section>
+							<p>Bienvenu sur un tutoriel expliquant le fonctionnement du site. Cette marche à suivre démontre
+							les actions principales de la plateforme</p>
+						</section>
+						<section>
+							<h2>Page d'accueil</h2>
+							<p>Voici les différentes actions disponibles depuis la page d'accueil</p>
+							<h3>Retoure à l'accueil</h3>
+							<p>En cliquant sur "Menu principal" cela permet de revenir à la page d'accueil</p>
+							<img class="tuto_images" src="./assets/tutorial/return_home.png">
+							<h3>Choisir son questionnaire</h3>
+							<p>En cliquant sur le bouton "Choisir questionnaire", cela ouvrira un menu déroulant contenant les
+							 différant établissement qui propose le questionnaire</p>
+							<img class="tuto_images" src="./assets/tutorial/choose_questionnaire.png">
+						</section>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -87,6 +106,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- Responsive navbar-->
 	<footer style="background-color: #deded5;" id="footer">
 		<div class="container p-4">
