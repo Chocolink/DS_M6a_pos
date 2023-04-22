@@ -306,10 +306,9 @@ function getQuestions(index) {
 	} else if(curentSet===2){
 		btn.innerHTML = "Référentiel Uni-fr";
 	} else {
-		btn.innerHTML = "Choisir questionnaire";
+		btn.innerHTML = "Choisir référentiel";
 	}
 }
-
 function getTutorial(){
 	let currentUrl = window.location.href
 	let tutorial =window.open(currentUrl, '_blank');

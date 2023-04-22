@@ -31,7 +31,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<!-- TODO: decide if we want this button -->
-						<li class="nav-item"><a class="nav-link active" aria-current="page" onclick="getTutorial()">help</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" onclick="getTutorial()">Aide</a></li>
 					</ul>
 				</div>
 			</div>
@@ -66,44 +66,78 @@
 					</div>
 					<!-- Tutorial page -->
 					<div class="container" id="tutorial" style="display: none">
-						<h1 style="font-weight: bold;text-align: center" class="display-6">Tutorial d'utilisation</h1>
+						<h1 style="font-weight: bold;text-align: center" class="display-6">Guide d'utilisation</h1>
+
 						<section>
-							<p>Bienvenu sur un tutoriel expliquant le fonctionnement du site. Cette marche à suivre démontre
+							<p>Bienvenue sur ce guide d'utilisation du site. Cette marche à suivre explique
 							les actions principales de la plateforme.</p>
 						</section>
+						<h3>Sommaire</h3>
+						<ol>
+							<li><a href="#comme_back">Retour à l'accueil</a></li>
+							<li><a href="#choose_questionnaire">Choisir son questionnaire</a></li>
+							<li><a href="#evaluate_skills">Evaluer ses compétences</a></li>
+							<li><a href="#consult_result">Consulter les résultats</a></li>
+							<li><a href="#tuto_import">Guide importation</a></li>
+							<li><a href="#result_example">Exemples de résultats</a></li>
+							<li><a href="#correspondence_table">Tableau de correspondance</a></li>
+						</ol>
 						<section>
-							<h2>Page d'accueil</h2>
-							<p>Voici les différentes actions disponibles depuis la page d'accueil.</p>
-							<h3>Retoure à l'accueil</h3>
+							<h3 id="comme_back">Retour à l'accueil</h3>
 							<p>En cliquant sur "Menu principal" cela permet de revenir à la page d'accueil.</p>
 							<img class="tuto_images" src="./assets/tutorial/return_home.png">
 						</section>
 						<section>
-							<h3>Choisir son questionnaire</h3>
-							<p>En cliquant sur le bouton "Choisir questionnaire", cela ouvrira un menu déroulant contenant les différant établissement qui propose le questionnaire.</p>
+							<h3 id="choose_questionnaire">Choisir son questionnaire</h3>
+							<p>En cliquant sur le bouton "Choisir référentiel", sélectionnez le référentiel correspondant à votre institution (Uni-fr ou HES-SO).</p>
 							<img class="tuto_images" src="./assets/tutorial/choose_questionnaire.png">
 						</section>
 						<section>
-							<h3>Remplissage du questionnaire</h3>
-							<p>Cette page permet de remplir le questionnaire propre à l'établissement sélectionné, le symbole <i class="icon-plus-sign"></i> permet d'afficher plus d'information sur la question.</p>
-							<p>Une fois toutes les questions évaluées, vous pouvez valider les réponses en cliquant sur le bouton "Valider mes réponses", ceci générera un graphique représentant vos résultats.</p>
+							<h3 id="evaluate_skills">Evaluer ses compétences</h3>
+							<p>Cette page vous permet de vous positionner sur le référentiel de compétence de votre institution. Le symbole «  <i class="icon-plus-sign"></i> » vous permet d’afficher les sous-compétences de la compétence principale. </p>
+							<p>Evaluer vos connaissances pour chaque compétence en cliquant sur le bouton ratio correspondant (1 non acquis, 6 acquis).</p>
 							<img class="tuto_images" src="./assets/tutorial/form.png">
 						</section>
 						<section>
-							<h3>Consultation des résultats</h3>
-							<p>Cette page affiche un graphique représentant vos réponses au questionnaire. Il y a plusieurs actions disponibles pour export votre résultat.</p>
+							<h3 id="consult_result">Consulter les résultats</h3>
+							<p>Cette page affiche les résultats de votre auto-positionnement sous forme de graphe-radar. Elle permet plusieurs actions disponibles pour exporter/importer et sauvegarder vos résultats.</p>
 							<ul>
-								<li>Télécharger PDF permet d'exporter votre résultat en PDF, ce fichier PDF contient le graphique.</li>
-								<li>Télécharger mon résultat (.txt) permet d'export votre résultat au format fichier text, ce fichier contient le résultat de chaque question.</li>
-								<li>Importer anciens résultats(.txt) permet d'importer un ancien résultat exporter en fichier texte. Une fois importer les anciens résultats vont se "superposer" aux résultats actuels</li>
+								<li>1.Télécharger PDF permet d'exporter votre résultat en PDF, ce fichier PDF contient le graphique.</li>
+								<li>2.Télécharger mon résultat (.txt) permet d'exporter votre résultat au format fichier texte, ce fichier pourra être réimporté pour superposer le graphique (voir importer anciens résultats). Ne pas renommer ce fichier.</li>
+								<li>3.Importer anciens résultats(.txt) permet d'importer un ancien résultat exporter en fichier texte. Une fois importer les anciens résultats vont se "superposer" aux résultats actuels (max 5 graphes).</li>
+								<li>4.Vous pouvez exporter ce nouveau graphe avec la superposition des graphiques en cliquant sur Télécharger PDF.</li>
 							</ul>
+							<p>Si l’acquisition de certaines compétences sont <=2, elles vous seront proposées comme compétences à approfondir. Vous pouvez utiliser le lien Moodle du cours Digital Skills «Développer ses compétences numériques d’enseignant·e du supérieur» pour accéder aux ressources liées à ces compétences.</p>
 							<img class="tuto_images" src="./assets/tutorial/graphic.png">
 						</section>
 						<section>
-							<h3>Résultats des exportations</h3>
-							<p>Voici le résultat des différentes actions décrites ci-dessus.</p>
-							<img class="tuto_images" src="./assets/tutorial/resultat_export.png">
+							<h3 id="tuto_import">Guide importation</h3>
+							<p>Cette marche à suivre explique comment importer un ancien résultat(.txt)</p>
+							<ul>
+								<li>1.Cliquer sur Importer anciens résultats(.txt)</li>
+								<li>2.Un explorateur de fichier va vous permette de sélectionner un fichier, choisissez un ancien résultat qui à été exporter en fichier(.txt).</li>
+								<li>3.L'ancien résultat à été superposé aux résultats actuels (max 5 graphes)</li>
+								<li>4.Il est maintenant possible d'exporter ce nouveau graphe contenant la superposition </li>
+							</ul>
+							<img class="tuto_images" src="./assets/tutorial/import_step.png">
 						</section>
+						<section>
+							<h3 id="result_example">Exemples de résultats</h3>
+							<p>Voici le résultat des différentes actions décrites ci-dessus.</p>
+							<ul>
+								<li>1.Résultat de l'exportation PDF</li>
+								<li>2.Résultat de téléchargement du résultat(.txt)</li>
+								<li>3-4.Résultat après avoir importer un ancien résultat(.txt) et avoir exporté les 2 graphes</li>
+							</ul>
+							<img class="tuto_images" src="./assets/tutorial/resultat_export.png">
+							<h2 id="correspondence_table">Tableau de correspondance</h2>
+							<p>En dessous du graphiques se trouve un tableau de correspondance, si l’acquisition de certaines compétences sont <=2, elles vous seront proposées comme compétences à approfondir.</p>
+							<p>Vous pouvez utiliser le lien Moodle du cours Digital Skills «Développer ses compétences numériques d’enseignant·e du supérieur» pour accéder aux ressources liées à ces compétences. </p>
+							<img class="tuto_images" src="./assets/tutorial/table_res.png">
+						</section>
+						<a href="#tutorial" class="scroll-to-top">
+							<img src="assets/tutorial/icon_arrow.png">
+						</a>
 					</div>
 				</div>
 			</div>
